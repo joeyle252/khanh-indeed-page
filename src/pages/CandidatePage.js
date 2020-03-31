@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, useHistory } from 'react-router-dom';
 import { Form, Col, Button } from 'react-bootstrap';
+import { ListGroup, ListGroupItem, Card } from 'react-bootstrap';
 
 export default function CandidatePage(props) {
     let { id } = useParams(); // bring the params from URL
@@ -44,18 +45,34 @@ export default function CandidatePage(props) {
     if (view === 'detail') {
         return (
             <div>
-                <div>firstName: {candidate.first_name}  </div>
 
-                <div>Last Name: {candidate.last_name}  </div>
-                <button onClick={() => { setView('edit') }}> Edit Detail </button>
+                <Card style={{ width: '18rem' }}>
+                    <Card.Img src="candidate.photo_url" />
+                    <Card.Body>
+                        <Card.Title>First Name: {candidate.first_name}</Card.Title>
+                        <Card.Text> Last Name: {candidate.last_name}</Card.Text>
+                    </Card.Body>
+                    <ListGroup className="list-group-flush">
+                        <ListGroupItem>Email: {candidate.email}</ListGroupItem>
+                        <ListGroupItem>Gender: {candidate.gender}</ListGroupItem>
+                        <ListGroupItem>Company: {candidate.company}</ListGroupItem>
+                        <ListGroupItem>City: {candidate.city}</ListGroupItem>
+                        <ListGroupItem>Country: {candidate.country}</ListGroupItem>
+                        <ListGroupItem>Company: {candidate.company}</ListGroupItem>
+                    </ListGroup>
+                    <Card.Body>
+                        <Button onClick={() => { setView('edit') }}> Edit Information </Button>
+
+                    </Card.Body>
+                </Card>
             </div>
         )
     }
     if (view === 'edit') {
         return (
             <div>
-                <button onClick={()=>{setView('detail')}}> Closed Edit </button>
-                <Form onSubmit={(e) => postData(e)} >
+
+                <Form className="form" onSubmit={(e) => postData(e)} >
                     <Form.Row>
                         <Form.Group as={Col} controlId="formGridEmail">
                             <Form.Label>First Name</Form.Label>
@@ -118,12 +135,13 @@ export default function CandidatePage(props) {
                         </Form.Group>
                     </Form.Row>
 
-
-
                     <Button variant="primary" type="submit">
                         Submit
-      </Button>
+                    </Button>
+                    <Button onClick={() => { setView('detail') }}> Closed Edit </Button>
+
                 </Form>
+
             </div>
         )
     }
