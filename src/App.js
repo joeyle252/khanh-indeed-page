@@ -1,28 +1,16 @@
-import React, { useState ,useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Switch } from "react-router-dom";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import HomePage from './pages/HomePage';
 import CompanyPage from './pages/CompanyPage';
-import Candidates from './pages/Candidates';
+import CandidatesPage from './pages/CandidatesPage';
 import NavBar from './pages/NavBar';
 
 
 function App() {
-
-  useEffect(() => {
-    const fetchCandidates = (async () => {
-      const resp = await fetch('http://localhost:3001/candidates');
-      const respJson = await resp.json();
-      console.log('khanh', respJson);
-      console.log('resp', resp)
-      fetchCandidates();
-    }
-    )
-
-  }, [])
-
+  
 
   return (
     <Router>
@@ -36,7 +24,7 @@ function App() {
             <CompanyPage />
           </Route>
           <Route path="/candidates">
-            <Candidates />
+            <CandidatesPage />
           </Route>
         </Switch>
       </div>

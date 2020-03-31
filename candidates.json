@@ -13,18 +13,6 @@
       "photo_url": "https://bit.ly/38m4jxp"
     },
     {
-      "id": 13,
-      "first_name": "Charles",
-      "last_name": "Lee",
-      "email": "sang@coderschool.vn",
-      "gender": "male",
-      "company": "CoderSchool",
-      "job_title": "CEO",
-      "city": "HCMC",
-      "country": "Vietnam",
-      "photo_url": "https://bit.ly/2FQhdr8"
-    },
-    {
       "id": 14,
       "first_name": "Khoa",
       "last_name": "Dam",
@@ -2255,18 +2243,6 @@
       "country": "Vietnam",
       "photo_url": "https://robohash.org/idvoluptatibusdolorem.png?size=500x500&set=set1",
       "id": 202
-    },
-    {
-      "first_name": "Sierra",
-      "last_name": "CoderSchool",
-      "email": "",
-      "gender": "Male",
-      "company": "Skipstorm",
-      "job_title": "Instructor",
-      "city": "H.C.M.C.",
-      "country": "Vietnam",
-      "photo_url": "https://robohash.org/idvoluptatibusdolorem.png?size=500x500&set=set1",
-      "id": 203
     }
   ]
 }
