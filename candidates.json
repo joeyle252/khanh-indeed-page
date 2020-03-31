@@ -1,42 +1,6 @@
 {
   "candidates": [
     {
-      "id": 12,
-      "first_name": "Loi",
-      "last_name": "Tran",
-      "email": "loi@coderschool.vn",
-      "gender": "male",
-      "company": "CoderSchool",
-      "job_title": "Instructor",
-      "city": "HCMC",
-      "country": "Vietnam",
-      "photo_url": "https://bit.ly/38m4jxp"
-    },
-    {
-      "id": 14,
-      "first_name": "Khoa",
-      "last_name": "Dam",
-      "email": "khoa@coderschool.vn",
-      "gender": "male",
-      "company": "CoderSchool",
-      "job_title": "Instructor",
-      "city": "HCMC",
-      "country": "Vietnam",
-      "photo_url": "https://bit.ly/2QWi9QU"
-    },
-    {
-      "id": 15,
-      "first_name": "Bitna",
-      "last_name": "Kim",
-      "email": "bitna@coderschool.vn",
-      "gender": "male",
-      "company": "CoderSchool",
-      "job_title": "Instructor",
-      "city": "HCMC",
-      "country": "Vietnam",
-      "photo_url": "https://bit.ly/3agwwXW"
-    },
-    {
       "id": 19,
       "first_name": "Celina",
       "last_name": "Nosworthy",
@@ -49,20 +13,8 @@
       "photo_url": "https://robohash.org/etquamsint.png?size=500x500&set=set1"
     },
     {
-      "id": 20,
-      "first_name": "Bryan",
-      "last_name": "Rosenshine",
-      "email": "brosenshinej@mac.com",
-      "gender": "Male",
-      "company": "Linktype",
-      "job_title": "Quality Control Specialist",
-      "city": "Miedzichowo",
-      "country": "Poland",
-      "photo_url": "https://robohash.org/repudiandaefugitet.png?size=500x500&set=set1"
-    },
-    {
       "id": 21,
-      "first_name": "Clemens",
+      "first_name": "Clemenshellllo1234",
       "last_name": "Braybrooke",
       "email": "cbraybrookek@engadget.com",
       "gender": "Male",

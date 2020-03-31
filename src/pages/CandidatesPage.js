@@ -1,7 +1,9 @@
 import React from 'react'
-import { useState ,useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Card, ListGroup, ListGroupItem, Row, Col, Container } from 'react-bootstrap';
-import { faMap, faEdit, faTrash, faUserMd, faMapPin, faEnvelope, faVenusMars, faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { faMap, faEdit, faTrash, faUserMd } from "@fortawesome/free-solid-svg-icons";
+import { faMapPin, faEnvelope, faVenusMars, faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -22,7 +24,6 @@ export default function CandidatesPage(props) {
   }, [])
 
 
-
   const onDeleteCandidate = id => {
     try {
       const config = { method: "DELETE" };
@@ -41,7 +42,11 @@ export default function CandidatesPage(props) {
     <Row>
       {candidates.map((candidate) => {
         return (
+          
+              
           <Col lg="3" key={candidate.id}>
+           
+            
   <Card>
     <Card.Img variant="top" src={candidate.photo_url} />
     <Card.Body>
@@ -80,6 +85,7 @@ export default function CandidatesPage(props) {
     </Card.Body>
   </Card>
 </Col>
+
         )})}
 </Row>
 </Container>
